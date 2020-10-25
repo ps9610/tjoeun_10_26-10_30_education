@@ -6,15 +6,15 @@
 #wrap #header #headerWrap {width:1278.8px;height:86.3px;padding:16px 80px 0 80px;margin:0 auto;}
 
 #wrap #main {width:100%;position:relative;z-index:2;}
-#wrap #main #mainWrap {width:1444px;height:2269.16px;margin:0 auto;}
+#wrap #main #mainWrap {width:1440px;height:2269.16px;margin:0 auto;}
 #wrap #main #mainWrap #section1 {position:relative;width:100%;}
 #wrap #main #mainWrap #section1 .slide-container {position:relative;z-index:1;width:100%;height:720px;overflow:hidden;}
-#wrap #main #mainWrap #section1 .slide-view {width:1444px;height:720px;margin:0 auto;}
-#wrap #main #mainWrap #section1 .slide-wrap {position:relative;width:calc(1444px*7);height:720px;margin-left:-1444px;}
-#wrap #main #mainWrap #section1 .slide-wrap .slide {float:left;width:1444px;height:720px;}
-#wrap #main #mainWrap #section1 .slide-wrap .slide > a {width:100%;height:720px;}
-#wrap #main #mainWrap #section1 .slide-wrap .slide > a > div {width:100%;}
-#wrap #main #mainWrap #section1 .slide-wrap .slide > a > div > img {width:100%;height:100%;}
+#wrap #main #mainWrap #section1 .slide-view {width:1446px;height:720px;margin:0 auto;}
+#wrap #main #mainWrap #section1 .slide-wrap {position:relative;width:calc(1446px*7);height:720px;margin-left:-1448px;}
+#wrap #main #mainWrap #section1 .slide-wrap .slide {float:left;width:1446px;height:720px;}
+#wrap #main #mainWrap #section1 .slide-wrap .slide > a {width:1446px;height:720px;}
+#wrap #main #mainWrap #section1 .slide-wrap .slide > a > div {width:1446px;}
+#wrap #main #mainWrap #section1 .slide-wrap .slide > a > div > img {width:1446px;height:100%;}
 
 #wrap #main #mainWrap #section1 .slide-btn {position:absolute;z-index:2;top:280px;right:0;width:70px;height:40px;padding:15px 0;}
 #wrap #main #mainWrap #section1 .slide-btn > ul {width:100%;}
