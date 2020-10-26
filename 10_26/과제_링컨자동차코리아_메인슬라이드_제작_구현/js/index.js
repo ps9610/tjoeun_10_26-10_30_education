@@ -1,4 +1,4 @@
-// 클릭이벤트  터치이벤트  6초이상없으먄 자동실행 
+// 클릭이벤트 터치이벤트 6초 이상 없으면 자동실행 
 (function(window, document, $){
 
 var cnt = 0;
@@ -44,18 +44,17 @@ $(".prev-button").on({
 
 // 터치 스와이프 안됨
 $(".slide-wrap").swipe({
-    swipeLeft : function(){
-        alert('dd');
+    swipeLeft : function(e){
+        e.preventDefault();
         nextSlideFn();
         timerControlFn();
-        },
-    swipeRight : function(){
+    },
+    swipeRight : function(e){
+        e.preventDefault();
         prevSlideFn();
         timerControlFn();
     }
 }); 
-
-
 
 $(".indacator-btn").each(function(index){
     $(this).on({
