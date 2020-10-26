@@ -18,7 +18,7 @@
 
 #wrap #main #section1 .slide-container .page-btn-wrap {z-index:2;position:absolute;width:100%;bottom:50px;text-align:center;}
 #wrap #main #section1 .slide-container .page-btn-wrap li {display:inline-block;width:10px;height:10px;border:2px solid #fff;box-sizing:border-box;margin:5px;border-radius:50%;overflow:hidden;}/* 테두리를 아예 포함시켜 버리기 */
-#wrap #main #section1 .slide-container .page-btn-wrap li,addPage {display:inline-block;width:10px;height:10px;border:2px solid #fff;box-sizing:border-box;margin:5px;border-radius:50%;overflow:hidden;}/* 테두리를 아예 포함시켜 버리기 */
+#wrap #main #section1 .slide-container .page-btn-wrap li,addPage {width:10px;height:10px;margin:0 5px;}
 #wrap #main #section1 .slide-container .page-btn-wrap li a {display:block;width:100%;background:#fff;}
 
 
