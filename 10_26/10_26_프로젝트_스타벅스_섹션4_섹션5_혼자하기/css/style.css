@@ -166,11 +166,56 @@
 #wrap #main #section3 .wrap .slide-container .page-btn-wrap > li > div .page-btn.addPagebtn {background-image:url(../img/main_prom_on.png);}
 
 /* section4 */
-#wrap #main #section4 {width:100%;height:167px;padding:30px 0 40px 0;background:#1e3932;}/* padding, margin, font 등 한줄로 쓸수있는건 한줄로쓰기 */
+#wrap #main #section4 {width:100%;height:auto;padding:30px 0 40px 0;background:#1e3932;}/* padding, margin, font 등 한줄로 쓸수있는건 한줄로쓰기 */
+#wrap #main #section4 .wrap {width:1100px;margin:0 auto;color:#fff;}
+#wrap #main #section4 .wrap .left {float:left;width:176px;margin-left:40px;}
+#wrap #main #section4 .wrap .left .left-wrap {display:block;}
+#wrap #main #section4 .wrap .left .left-wrap > img {display:block;width:176px;}
+
+#wrap #main #section4 .wrap .right {float:left;margin-left:40px;}
+#wrap #main #section4 .wrap .right .right-wrap {width:100%;}
+#wrap #main #section4 .wrap .right .right-wrap > h2 {font-size:26px;padding-bottom:12px;}
+#wrap #main #section4 .wrap .right .right-wrap > h2 > strong {display:inline-block;font-weight:800;}
+
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 {width:100%;padding-bottom:12px;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 .row2-left {float:left;line-height:140%;margin-right:70px;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 .row2-left > h3 {font-size:16px;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 .row2-left > h3 >strong {display:inline-block;font-weight:800;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 .row2-left > h3 >strong > br {display:block;}
+
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 .row2-right {float:left;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 .row2-right > div {width:100%;margin-left:70px;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 .row2-right > div > span {float:left;display:block;height:38px;border:2px solid #fff;border-radius:5px;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 .row2-right > div > span:nth-child(1) {background:#00704a;border:2px solid #00704a;width:92px;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 .row2-right > div > span:nth-child(2) {margin-left:20px;background:transparent;width:74px;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 .row2-right > div > span > a {display:block;color:#fff;line-height:38px;text-align:center;}
+
+#wrap #main #section4 .wrap .right .right-wrap > hr {display:block;height:1px;border:0;background:#ddd;opacity:0.4;margin-bottom:22px;}
+
+#wrap #main #section4 .wrap .right .right-wrap .right-row3 {width:100%;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row3 .row3-left {float:left;line-height:140%;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row3 .row3-left > h4 {display:block;margin-right:30px;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row3 .row3-left > h4 > strong {display:inline-block;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row3 .row3-left > h4 > strong > br {display:block;}
+
+#wrap #main #section4 .wrap .right .right-wrap .right-row3 .row3-right {float:left;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row3 .row3-right > span {display:block;margin-left:30px;width:179px;height:38px;border:2px solid #fff;border-radius:5px;}
+#wrap #main #section4 .wrap .right .right-wrap .right-row3 .row3-right > span > a {display:block;color:#fff;line-height:38px;text-align:center;}
+
 
 /* section5 */
 #wrap #main #section5 {width:100%;height:573px;background:url(../img/section5.jpg) no-repeat 50% 0;background-size:cover;}
+#wrap #main #section5 .wrap {width:1100px;margin:0 auto;}
+#wrap #main #section5 .wrap .left {float:left;width:50%;height:439px;text-align:center;padding:80px 0;}
+#wrap #main #section5 .wrap .left > img {width:210px;}
 
+#wrap #main #section5 .wrap .right {float:left;width:50%;}
+#wrap #main #section5 .wrap .right > div {width:453px;height:129px;padding-top:180px;}
+#wrap #main #section5 .wrap .right > div > img {width:100%;}
+#wrap #main #section5 .wrap .right > span {margin-top:50px;display:block;width:121px;height:34px;border:2px solid #333;}
+#wrap #main #section5 .wrap .right > span > a {display:block;line-height:34px;text-align:center;background:transparent;}
+#wrap #main #section5 .wrap .right > span > a:hover {color:#fff;background:#000;text-decoration:underline;transition:all .4s;}
+#wrap #main #section5 .wrap .right > span > a:focus {color:#fff;background:#000;text-decoration:underline;transition:all .4s;}
 /* section6 */
 #wrap #main #section6 {width:100%;height:400px;background:#f4eed9;}
 
