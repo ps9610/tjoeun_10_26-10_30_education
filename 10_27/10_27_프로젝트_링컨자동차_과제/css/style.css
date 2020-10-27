@@ -19,6 +19,13 @@
 #wrap #main #section1 .slide-container .page-btn-wrap > li.addBtn {background:transparent;width:20px;height:20px;margin:0 8px;}
 #wrap #main #section1 .slide-container .page-btn-wrap > li > a {display:block;width:10px;height:10px;}
 
+#wrap #main #section1 .slide-container .btn-wrap {position:absolute;z-index:2;top:50%;left:1368px;width:100%;}
+#wrap #main #section1 .slide-container .btn-wrap .prev-btn-wrap {width:70px;height:70px;background:#55f;text-align:center;}
+#wrap #main #section1 .slide-container .btn-wrap .next-btn-wrap {width:70px;height:70px;background:#f55;text-align:center;}
+#wrap #main #section1 .slide-container .btn-wrap .next-btn-wrap > a,
+#wrap #main #section1 .slide-container .btn-wrap .prev-btn-wrap > a {display:inline-block;width:22px;height:22px;margin-top:22px;}
+#wrap #main #section1 .slide-container .btn-wrap .next-btn-wrap > a > i,
+#wrap #main #section1 .slide-container .btn-wrap .prev-btn-wrap > a > i {display:inline-block;width:11px;height:100%;border:2px solid #fff;transform:rotate(45deg);}
 
-#wrap #footer {position:relative;z-index:1;width:1440px;;height:589px;border-bottom:1px solid #ddd;}
+#wrap #footer {position:relative;z-index:1;width:1440px;height:589px;border-bottom:1px solid #ddd;}
 
