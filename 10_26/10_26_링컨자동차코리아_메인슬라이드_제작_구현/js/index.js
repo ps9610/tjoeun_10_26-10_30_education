@@ -14,7 +14,9 @@ function nextSlideFn(){
 
 $(".next-button").on({
     click : function(){
-        nextSlideFn();
+        if( !$("slide-wrap".is(":animated")) ){
+            nextSlideFn();
+        }
         timerControlFn();
     }
 });
@@ -37,7 +39,9 @@ function prevSlideFn(){
 
 $(".prev-button").on({
     click : function(){
-        prevSlideFn();
+        if( !$("slide-wrap".is(":animated")) ){
+            prevSlideFn();
+        }
         timerControlFn();
     }
 });
@@ -46,12 +50,16 @@ $(".prev-button").on({
 $(".slide-wrap").swipe({
     swipeLeft : function(e){
         e.preventDefault();
-        nextSlideFn();
+        if( !$("slide-wrap".is(":animated")) ){
+            nextSlideFn();
+        }
         timerControlFn();
     },
     swipeRight : function(e){
         e.preventDefault();
-        prevSlideFn();
+        if( !$("slide-wrap".is(":animated")) ){
+            prevSlideFn();
+        }
         timerControlFn();
     }
 }); 

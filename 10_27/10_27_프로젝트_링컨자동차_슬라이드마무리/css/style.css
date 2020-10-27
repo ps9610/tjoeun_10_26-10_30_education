@@ -8,7 +8,7 @@
 
 #wrap #main {z-index:2;position:relative;width:100%;background:#fff;}/* 콘텐츠는 배경 없으면 무조건 하얀색주기 */
 #wrap #main #section1 {width:100%;height:720px;background:#fff;border-bottom:1px solid #ddd;}
-#wrap #main #section1 .slide-container {position:relative;width:100%;}
+#wrap #main #section1 .slide-container {position:relative;width:100%;height:720px;}
 #wrap #main #section1 .slide-container .slide-view {z-index:1;position:relative;width:100%;overflow:hidden;}
 #wrap #main #section1 .slide-container .slide-view .slide-wrap {position:relative;/* left:calc(-1438px*0); */width:calc(1438px*7);margin-left:-1438px;}
 #wrap #main #section1 .slide-container .slide-view .slide-wrap .slide {float:left;width:1438px;}
@@ -23,11 +23,17 @@
 #wrap #main #section1 .slide-container .page-btn-wrap li.addPage a {background:transparent;}
 
 #wrap #main #section1 .slide-container .next-btn-wrap {position:absolute;z-index:2;right:0;bottom:50%;width:70px;height:70px}
-#wrap #main #section1 .slide-container .next-btn-wrap a {display:block;width:100%;height:100%;background:#c00;}
-#wrap #main #section1 .slide-container .next-btn-wrap a i {display:block;width:30px;height:30px;border:1px solid #fff;}
-
+#wrap #main #section1 .slide-container .next-btn-wrap a {position:relative;display:block;width:100%;height:100%;background:#b45f1a;transition:all .4s ease-in-out;}
+#wrap #main #section1 .slide-container .next-btn-wrap a:hover {background:#fff;}
+#wrap #main #section1 .slide-container .next-btn-wrap a i {transition:all .4s;position:absolute;/* top:20px;left:10px; */top:50%;left:50%;margin-top:-15px;margin-left:-22.5px;display:block;width:30px;height:30px;border-top:2px solid #fff;border-right:2px solid #fff;transform:rotate(45deg) scale(.7);}
+#wrap #main #section1 .slide-container .next-btn-wrap a:hover i {border-color: #000000;}
+                                                                                                                        /* margin-lef로 7.5px만큼 더 보냄 */                                                                                     /* 세미콜론안에 여러개 쓸 수 있음, 스케일: 크기,선 굴기 정해줌 */     
 #wrap #main #section1 .slide-container .prev-btn-wrap {position:absolute;z-index:2;right:0;top:50%;width:70px;height:70px;}
-#wrap #main #section1 .slide-container .prev-btn-wrap a {display:block;width:100%;height:100%;background:#00c;}
-#wrap #main #section1 .slide-container .prev-btn-wrap a i {display:block;width:30px;height:30px;border:1px solid #fff;}
+#wrap #main #section1 .slide-container .prev-btn-wrap a {transition:all .4s ease-in-out;position:relative;display:block;width:100%;height:100%;background:#4f4c43;opacity:.6;}
+#wrap #main #section1 .slide-container .prev-btn-wrap a:hover {background:#fff;}
+#wrap #main #section1 .slide-container .prev-btn-wrap a i {transition:all .4s;position:absolute;/* top:20px;left:30px; */top:50%;left:50%;margin-top:-15px;margin-left:-7.5px;display:block;width:30px;height:30px;border-top:2px solid #fff;border-left:2px solid #fff;transform:rotate(-45deg) scale(.7);}
+#wrap #main #section1 .slide-container .prev-btn-wrap a:hover i {border-color:#000;}
+                                                                                                                        /* margin-lef로 7.5px만큼 덜 보냄 */                                                                                     /* 세미콜론안에 여러개 쓸 수 있음, 스케일: 크기,선 굴기 정해줌 */     
+
 
 #wrap #footer {z-index:1;position:relative;height:700px;background:#fff;border-bottom:1px solid #ddd;}/* 임시용 */
