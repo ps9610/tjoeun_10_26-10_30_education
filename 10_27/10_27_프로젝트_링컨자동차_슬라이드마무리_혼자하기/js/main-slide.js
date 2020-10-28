@@ -57,6 +57,19 @@
             }
         });
     })
+
+    $(".slide-wrap").swipe({
+        swipeLeft:function(){
+            if( !$(this).is(":animated") ){
+                nextSlideFn();
+            }
+        },
+        swipeRight:function(){
+            if( !$(this).is(":animated") ){
+                prevSlideFn();
+            }
+        }
+    })
     //5.페이지 버튼 애니메이션 작동 시에만 실행시키기
     //  2번에 추가
 })(jQuery);

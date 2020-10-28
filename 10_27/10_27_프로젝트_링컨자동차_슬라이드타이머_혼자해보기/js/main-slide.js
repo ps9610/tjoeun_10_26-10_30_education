@@ -61,16 +61,13 @@
     //  + 2번에 추가
 
     $(".slide-wrap").swipe({
-        swipeLeft : function(e){
-            e.preventDefault()
+        swipeLeft : function(){
             if( !$(".slide-wrap").is(":animated") )
-            /* nextSlideFn(); */
-            alert("ssllw")
+            nextSlideFn();
         },
-        swipeRight : function(e){
-            e.preventDefault();
+        swipeRight : function(){
             if( !$(".slide-wrap").is(":animated") )
-            prevSlideFn()        
+            prevSlideFn();        
         }
     });
     
