@@ -16,6 +16,7 @@
     };
 
     $(window).scroll(function(){
+        
         if( $(this).scrollTop() < $("#section5").offset().top+200 ){
             if(t == 1){
                 t=0;
