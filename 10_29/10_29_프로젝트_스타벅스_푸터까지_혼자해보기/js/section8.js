@@ -1,34 +1,33 @@
 ;(function(document,window,$,undefined){
     
-    var t = 0;
+    var t=0;
 
-        setTimeout(formatFn,100);
+    setTimeout(formatFn,100);
 
-        function formatFn(){
-            $("#section8 .title-01").stop().animate({left:550+1000,opacity:0},1000);  //left일 경우는 양수값
-            $("#section8 .title-02").stop().animate({left:523+1000,opacity:0},1000);
-        };
+    function formatFn(){
+        $("#section8 .s8-right-img1").stop().animate({left:-30+1000,opacity:0},1000);
+        $("#section8 .s8-right-img2").stop().animate({left:-30+1000,opacity:0},1000);
+    };
 
-        function animationFn(){ //로딩하면 바로 실행
-            $("#section8 .title-01").stop().animate({left:550,opacity:1},2500);  //제자리
-            $("#section8 .title-02").stop().animate({left:523,opacity:1},3000); 
-        };
-        $(window).scroll(function(){
-            if( $(this).scrollTop() >=/* 스크롤탑값이 어디정도 이상일 때 실행하라 */ $("#section7").offset().top+200/* 그 전:-200 그 후:+200 */ ){
-                if( t==0 ){
-                    t=1;
-                    animationFn();
-                }
+    function animateFn(){
+        $("#section8 .s8-right-img1").stop().animate({left:-30,opacity:1},2500);
+        $("#section8 .s8-right-img2").stop().animate({left:-30,opacity:1},2800);
+    };
+
+    $(window).scroll(function(){
+        
+        if( $(this).scrollTop() < $("#section7").offset().top+200 ){
+            if(t==1){
+                t=0;
+                formatFn();
             }
-            if( $(this).scrollTop() </* 스크롤탑값이 어디정도 미만일 때 실행하라 */ $("#section7").offset().top+200/* 그 전:-200 그 후:+200 */ ){
-                if( t==1 ){
-                    t=0;
-                    formatFn();
-                }
+        }
+        if( $(this).scrollTop() >= $("#section7").offset().top+200 ){
+            if(t==0){
+                t=1;
+                animateFn();
             }
-        });
+        }
+    });
 
-
-
-
-})(document,window,$);
+})(document,window,jQuery);
