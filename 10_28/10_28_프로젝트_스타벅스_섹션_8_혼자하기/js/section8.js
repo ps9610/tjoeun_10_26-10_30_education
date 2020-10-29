@@ -9,9 +9,6 @@ setTimeout(init,100);
         $(".right-row2 .image").stop().animate({ right:-1000 },0).animate({ right:0 },2900);
     }
 
-
-
-
     function formatFn(){
         $(".right-row1 .image").stop().animate({ right:-1000 },1000);
         $(".right-row2 .image").stop().animate({ right:-1000 },1000);
