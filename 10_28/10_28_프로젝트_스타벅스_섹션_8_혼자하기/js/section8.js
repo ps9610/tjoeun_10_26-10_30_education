@@ -30,13 +30,13 @@ setTimeout(init,100);
                 t=1;
                 animateFn();
             }
+        }
         if( $(this).scrollTop()  < $("#section7").offset().top+200 ){
             if( t==1 ){
                 t=0;
                 formatFn();
             }
         }
-    }
 
 });
 })(document,window,jQuery);
