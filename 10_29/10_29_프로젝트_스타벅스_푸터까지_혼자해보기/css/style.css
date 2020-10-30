@@ -307,9 +307,9 @@
 #wrap #footer ul .footer1 > ul .footer1-row > ul > li {width:100%;}
 #wrap #footer ul .footer1 > ul .footer1-row > ul > li > a {display:block;font-size:11.5px;line-height:24px;color:#fff;}
 
-#wrap #footer ul .footer2 {width:100%;background: #282828;}
+#wrap #footer ul .footer2 {width:100%;background:#282828;padding:20px 0;}
 #wrap #footer ul .footer2 > ul {width:100%;}
-#wrap #footer ul .footer2 > ul > li {float:left;width:100%;padding:20px 0;}
+#wrap #footer ul .footer2 > ul > li {float:left;width:100%;}
 #wrap #footer ul .footer2 > ul > li > img {display:block;width:189px;height:40px;}
 
 
