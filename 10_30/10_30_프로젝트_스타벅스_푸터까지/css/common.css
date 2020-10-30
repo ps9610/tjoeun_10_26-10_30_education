@@ -6,6 +6,7 @@ html {overflow-y:scroll;}
 body {font:normal 14px/1 "Nanum Gothic","Noto Sans KR";color:#444;background:#fff;}
                          /*  1차글꼴   ,    2차글꼴  */
 header, main, footer, section, aside, nav, aside {display: block;}
+i, em, address {font-style:normal;} /* |가 반듯하게 되게 함*/ 
 
 ul, li {list-style: none;}
 a {color: #444; text-decoration: none;}

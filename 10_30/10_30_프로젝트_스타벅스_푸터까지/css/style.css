@@ -296,4 +296,58 @@
 #wrap #main #section9 .wrap  .right-title-wrap .store-find-wrap > a:focus {background:#222;border-color:#222;color:#fff;text-decoration:underline;}
 
 /* footer */
-#wrap #footer {z-index:1;position:relative;width:100%;height:488px;padding:32px 0 35px;/* = 32px 0 35px 0 */background:#2c2a29;}
+#wrap #footer {z-index:1;position:relative;width:100%;height:auto;background:#2c2a29;}
+#wrap #footer .row .wrap {width:1100px;/* height:500px; */margin:0 auto;/* background:#c99; */}/* 임시높이 잡는 이유 : 마진, 넓이있는 랩핑 보려고 -> 확인했으면 바로 지우기 */
+#wrap #footer .row1 {width:100%;padding:32px 0 35px 0;}
+#wrap #footer .row1 .wrap > ul {width:100%;background:url(../img/footer_logo.png) no-repeat 100% 0;}
+#wrap #footer .row1 .wrap > ul > li {float:left;width:20%;}
+#wrap #footer .row1 .wrap > ul > li > dl {width:100%;}
+#wrap #footer .row1 .wrap > ul > li > dl > dt {padding-bottom:15px;}
+#wrap #footer .row1 .wrap > ul > li > dl > dt > a {color:#fff;font-size:14px;}
+#wrap #footer .row1 .wrap > ul > li > dl > dd {padding-bottom:10px;}
+#wrap #footer .row1 .wrap > ul > li > dl > dd > a {color:#fff;font-size:12px;}
+#wrap #footer .row1 .wrap > ul > li > dl        a:hover {text-decoration:underline;}
+
+#wrap #footer .row2 {width:100%;padding:0;background:#282828;}
+#wrap #footer .row2 .wrap {width:1134px;padding:8px 0;}
+#wrap #footer .row2 .wrap > ul {width:100%;}
+#wrap #footer .row2 .wrap > ul > li {float:left;width:189px;}
+#wrap #footer .row2 .wrap > ul > li > a {display:inline-block;}
+#wrap #footer .row2 .wrap > ul > li > a > img {width:100%;}
+
+#wrap #footer .row3 {width:100%;padding:30px 0 40px 0;} /* 여기까지하면 당연히 높이를 안 잡았으니까 조그맣게 잡힘 -> 내용 입력해서 채우기 */
+            /* 👆이렇게 공간 남기면 row 123에 다 적용한다는거(자손처리),,신기*/
+#wrap #footer .row3 .wrap > ul {width:100%;}
+#wrap #footer .row3 .wrap > ul > li {width:100%;text-align:center;}
+#wrap #footer .row3 .wrap > ul > li a:hover {text-decoration:underline;}
+
+#wrap #footer .row3 .wrap > ul > li:nth-child(1) {padding-bottom:10px;}
+#wrap #footer .row3 .wrap > ul > li:nth-child(2) {padding-bottom:20px;}
+#wrap #footer .row3 .wrap > ul > li:nth-child(3) {padding-bottom:20px;}
+
+#wrap #footer .row3 .wrap > ul > li:nth-child(1) > span {display:inline-block;vertical-align:middle;}
+#wrap #footer .row3 .wrap > ul > li:nth-child(1) > span > a {color:#ddd;font-size:12px;}
+#wrap #footer .row3 .wrap > ul > li:nth-child(1) > span > i {margin:5px 10px 0 10px;margin-top:3px;display:inline-block;width:1px;height:12px;background:#353535;}
+#wrap #footer .row3 .wrap > ul > li:nth-child(1) > span:first-child > a {color:#00b050;font-weight:600;}
+#wrap #footer .row3 .wrap > ul > li:nth-child(1) > span:last-child > i {background-color:transparent;}
+
+#wrap #footer .row3 .wrap > ul > li:nth-child(2) > span {display:inline-block;width:90px;height:30px;border-radius:4px;border:2px solid #fff;}
+#wrap #footer .row3 .wrap > ul > li:nth-child(2) > span > a {display:inline-block;text-align:center;line-height:30px;color:#fff;font-size:12px;font-weight:500;}/* 가운데 정렬, 위 아래 정렬순서대로 */
+
+#wrap #footer .row3 .wrap > ul > li:nth-child(3) > span {display:inline-block;vertical-align:middle;color:#999;font-size:12px;}
+#wrap #footer .row3 .wrap > ul > li:nth-child(3) > span > i {margin:5px;margin-top:3px;display:inline-block;width:1px;height:12px;background:#353535;}
+
+#wrap #footer .row3 .wrap > ul > li:nth-child(4) {display:block;    }
+#wrap #footer .row3 .wrap > ul > li:nth-child(4) > span {display:block;font-size:12px;}
+
+
+
+
+
+
+/* quick */
+#wrap .quick {z-index:3;position:fixed;top:138px;left:50%;margin-left:570px;/*왼쪽에서부터 570px만큼 떨어지게 한다*/width:140px;height:calc(265px+96px);}
+#wrap .quick > span:nth-child(1) {display:block;width:100%;height:265px;} 
+#wrap .quick > span:nth-child(2) {display:block;width:100%;height:96px;} 
+#wrap .quick > span > a {display:inline-block;} 
+#wrap .quick > span > a > img {width:100%;} 
