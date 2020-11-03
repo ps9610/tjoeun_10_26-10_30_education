@@ -44,7 +44,8 @@ function prevSlideCountFn(){
             $('.slide').removeClass('addSlide');
             $('.slide').eq(cnt+1).addClass('addSlide');
         }); //if를 next에서 쓰면 넘어가기 전에 앞에꺼로 바껴서 연결되어 보이지 않음
-        pageBtnFn(cnt/* >3? 0:cnt 이렇게 쓰기 싫으면 함수에 직접 써*/); /* 일단 cnt가 바뀌고 나서 그 변경된 cnt값이 저장되어야 함수가 실행됨 :페이지버튼(전달인자)*/
+        pageBtnFn(cnt/* >3? 0:cnt 이렇게 쓰기 싫으면 함수에 직접 써*/); 
+        /* 일단 cnt가 바뀌고 나서 그 변경된 cnt값이 저장되어야 함수가 실행됨 :페이지버튼(전달인자)*/
         // animate있는 함수랑 pageBtn함수랑 형제라 같은 시간대에 설정됨
         // pageBtn이 콜백함수되면 슬라이드가 돌아가고 나서 한 템포 뒤에(0.6초라는 시간차때문에) 페이지버튼이 색칠됨
     }
