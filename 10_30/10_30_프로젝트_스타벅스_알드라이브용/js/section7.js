@@ -11,7 +11,7 @@
         $("#section7 h3").stop().animate({left:-1000},1500,function(){
             $("#section7 h3").stop().animate({left:0},2500)
         })
-        $("#section7 p") .stop().animate({opacity:0},000,function(){
+        $("#section7 p") .stop().animate({opacity:0},   000,function(){
             $("#section7 p") .stop().animate({opacity:1},3000)
         })
     };
