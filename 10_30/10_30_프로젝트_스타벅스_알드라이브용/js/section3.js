@@ -233,7 +233,7 @@ $(".pause-play-btn").on({
             var x = null;
                 x = $(this).hasClass("addPlay"); //논리값으로 나옴, true(1) || false(0)
             
-                if( x ==false ){ // 처음엔 addPlay 클래스가 없으니까 = 현재 재생중인 상태
+                if( x==false ){ // 처음엔 addPlay 클래스가 없으니까 = 현재 재생중인 상태
                     clearInterval(setId);
                     clearInterval(setId2);
                     $(this).addClass("addPlay");
@@ -267,12 +267,12 @@ function timerControlFn(){
     clearInterval(setId); //10번 : ⏸ 버튼 누르면 애니메이션 멈추고 
     clearInterval(setId2); // 버튼 누르고 시간 멈추게 하기
     $(".pause-play-btn").addClass("addPlay"); // ▶버튼 나옴
-        //만약 toggle 변수 사용했으면 t=1; 써서 중지상태임을 알려줘야됨
+    //만약 toggle 변수 사용했으면 t=1; 써서 중지상태임을 알려줘야됨
 
-        //중지상태 카운트 시작 : 5초 후에도 사용자가 다음/이전버튼을 누르지 않으면 
+        //중지상태 카운트 시작 : 10초 후에도 사용자가 다음/이전버튼을 누르지 않으면 
         var cnt2 = 0;
         setId2 = setInterval(function(){ 
-            cnt2++; //1 2 3 4 5 ...
+            cnt2++; //1 2 3 4 5 6 7 8 9 ...
                     //그러면 메인함수 호출과 동시에 initTimerFn() 재실행
             if( cnt2>9 ){
                 nextSlideCountFn(); //next slide 즉시 실행
