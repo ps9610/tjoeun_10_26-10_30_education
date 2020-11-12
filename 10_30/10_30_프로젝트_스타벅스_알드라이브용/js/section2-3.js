@@ -6,7 +6,7 @@
 
     function noticeSlideFn(){
         cnt++; //증감수라서 처음이 -1로 시작해야 0부터 나옴
-        if(cnt > 3){
+        if(cnt > 3){    //총 5개인데 시작이 -1이니까 끝나는게 3
             cnt = -1; //마지막 슬라이드를 0으로 셋팅, (마지막이전 마지막)
         }
         $(".notice-list li").stop().animate({top:24/* css에서 li top값이 24니까} */},0).css({zIndex:2}); //롤링 대상이 되는 요소를 앞에 쓰면됨
