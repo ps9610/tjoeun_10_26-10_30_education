@@ -13,38 +13,34 @@ $("선택자").one({}); //on : only one
 (function($){
     
     $(".main-btn").on({
-    // 마우스가 #nav를 올라가면 (mouseenter = mouseover)
         mouseenter:function(){
-            // 버튼에 색상,글자,배경색 등 효과준거
-            $(".main-btn").removeClass("addMainbtn"); //모든 main-btn 추가된 클래스 삭제
-            $(this).addClass("addMainbtn"); // 현재 (this) current만 추가 클래스(addClass());
-            // 서브메뉴의 슬라이드 다운 업 효과(애니메이션)
-            $(".sub").stop().slideUp(0); //애니메이션이나 효과는 무조건 stop()(=그 이전껀 다 삭제하고 마지막 효과만 남아라) : 버블링 방지
+           
+            $(".main-btn").removeClass("addMainbtn");
+            $(this).addClass("addMainbtn");
+           
+            $(".sub").stop().slideUp(0);
             $(this).next().slideDown(500,"easeInQuad");
         },
-        focusin:function(){ //접근성
-            // 버튼에 색상,글자,배경색 등 효과준거
+        focusin:function(){
+           
             $(".main-btn").removeClass("addMainbtn"); 
             $(this).addClass("addMainbtn");
         }
     });
 
-    // 마우스가 #nav를 떠나면(mouseleave = mouseout)
+   
     $("#nav").on({
         mouseleave:function(){
             $(".sub").stop().slideUp(500);
-            $(".main-btn").removeClass("addMainbtn"); // removeClass(".addMainbtn")이 아닌 이유 : JQuery가 html에 들어가있는거라서 CSS처럼 쓰지않음
+            $(".main-btn").removeClass("addMainbtn");
         },
     });
 
     //메인 버튼 클릭 링크 이동
-
-    //each() 메소드 활용 버튼 배열 처리
-    // 1) $(".main-btn").each();
+    
      $(".main-btn").each(function(index){
         $(this).on({
             click:function(){
-                //if(조건){실행}
                 if(index==0){
                     location.href="https://www.starbucks.co.kr/coffee/index.do";
                 }
@@ -61,8 +57,7 @@ $("선택자").one({}); //on : only one
                     location.href="https://www.starbucks.co.kr/msr/index.do";
                 }
                 else if(index==5){
-                    //location.href="https://www.starbucks.co.kr/whats_new/index.do"; <-_self
-                    window.open("https://www.starbucks.co.kr/whats_new/index.do"); //<-_blank
+                    window.open("https://www.starbucks.co.kr/whats_new/index.do");
                 }
             }
         });
