@@ -131,17 +131,15 @@
 
 #wrap #main #section3 .wrap .slide-container {position:relative;width:100%;overflow:hidden;}
 #wrap #main #section3 .wrap .slide-container .slide-view {z-index:2;position:relative;width:829px;margin:0 auto;}
-#wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap {position:relative;/* left:calc(-829px*3); */width:/*calc(829px*6) =*/4974px;margin-left:-829px;} /* 819px짜리 슬라이드 6개 들어가니까 */
-#wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap .slide {float:left;width:829px;opacity:0.3;} /* 바깥여백까지 같이 포함된 값을 입력 */
+#wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap {position:relative;width:4974px;margin-left:-829px;}
+#wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap .slide {float:left;width:829px;opacity:0.3;}
 #wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap .slide.addSlide {opacity:1;}
 #wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap .slide > div {position:relative;margin:0 5px;}
-#wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap .slide > div > img {z-index:1;position:relative;width:100%;} /* 만약 이미지가 아니고 텍스트라면 부모높이는 다 잡아줘야됨 */
+#wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap .slide > div > img {z-index:1;position:relative;width:100%;}
 
 #wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap .slide > div > span {z-index:2;position:absolute;bottom:20px;display:block;width:121px;height:36px;left:50%;margin-left:-65px;border:2px solid #222;border-radius:4px;}
-#wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap .slide > div > span > a {display:block;width:100%;height:100%;line-height:38px;background:transparent;color:#222;font-size:14px;text-align:center;} /* span에서 다 해결해서 a는 냅두기 */
-#wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap .slide > div > span > a:hover {background:#222;color:#fff;text-decoration:underline;}
+#wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap .slide > div > span > a {display:block;width:100%;height:100%;line-height:38px;background:transparent;color:#222;font-size:14px;text-align:center;}
 #wrap #main #section3 .wrap .slide-container .slide-view .slide-wrap .slide > div > span > a:focus {background:#222;color:#fff;text-decoration:underline;}
-
 
 #wrap #main #section3 .wrap .slide-container .next-btn-wrap {display:block;width:50px;height:50px;z-index:2;position:absolute;top:50%;margin-top:-100px;right:50%;margin-right:-520px;color:#222;border:2px solid #222;border-radius:50%;overflow:hidden;}
 #wrap #main #section3 .wrap .slide-container .next-btn-wrap > a {display:block;width:100%;line-height:50px;text-align:center;transition:all 0.3s;background:url(../img/arrow_right_on.png) no-repeat 50% 50%;}
@@ -161,7 +159,7 @@
 #wrap #main #section3 .wrap .slide-container .page-btn-wrap > li > div .page-btn.addPagebtn {background-image:url(../img/main_prom_on.png);}
 
 /* section4 */
-#wrap #main #section4 {width:100%;padding:30px 0 40px 0;background:#1e3932;}/* padding, margin, font 등 한줄로 쓸수있는건 한줄로쓰기 */
+#wrap #main #section4 {width:100%;padding:30px 0 40px 0;background:#1e3932;}
 #wrap #main #section4 .wrap {width:1100px;margin:0 auto;}
 #wrap #main #section4 .wrap .left {float:left;width:220px;}
 #wrap #main #section4 .wrap .left .left-wrap {margin-right:44px;}
@@ -176,7 +174,7 @@
 #wrap #main #section4 .wrap .right .right-wrap .right-row2 .right-row2-left {float:left;width:647px;}
 #wrap #main #section4 .wrap .right .right-wrap .right-row2 .right-row2-left > h3 {font-size:17px;line-height:140%;}
 #wrap #main #section4 .wrap .right .right-wrap .right-row2 .right-row2-left > h3 > strong {font-weight:800;}
-#wrap #main #section4 .wrap .right .right-wrap .right-row2 .right-row2-left > h3 > br {display:block;} /* 어차피 줄 바껴야 되니까 */
+#wrap #main #section4 .wrap .right .right-wrap .right-row2 .right-row2-left > h3 > br {display:block;} 
 
 #wrap #main #section4 .wrap .right .right-wrap .right-row2 .right-row2-right {float:left;width:233px;text-align:right;}
 #wrap #main #section4 .wrap .right .right-wrap .right-row2 .right-row2-right > div {display:inline-block;}
@@ -189,7 +187,7 @@
 #wrap #main #section4 .wrap .right .right-wrap .right-row2 .right-row2-right > div > span > a:hover {text-decoration:underline;}
 #wrap #main #section4 .wrap .right .right-wrap .right-row2 .right-row2-right > div > span > a:focus {text-decoration:underline;}
 
-#wrap #main #section4 .wrap .right .right-wrap > hr {border:0;height:1px;background:#fff;opacity:.2;margin:20px 0;} /*hr 권장사항(기본이 2줄높이라서 보더는 0으로 해야됨)*/
+#wrap #main #section4 .wrap .right .right-wrap > hr {border:0;height:1px;background:#fff;opacity:.2;margin:20px 0;}
 
 #wrap #main #section4 .wrap .right .right-wrap .right-row3 {color:#fff;}
 #wrap #main #section4 .wrap .right .right-wrap .right-row3 .right-row3-left {float:left;width:647px;}
@@ -198,7 +196,7 @@
 #wrap #main #section4 .wrap .right .right-wrap .right-row3 .right-row3-left > h4 > br {display:block;}
 
 #wrap #main #section4 .wrap .right .right-wrap .right-row3 .right-row3-right {float:left;width:233px;}
-#wrap #main #section4 .wrap .right .right-wrap .right-row3 .right-row3-right > div {width:100%;text-align:right;}/* text-align:block 안먹음 */
+#wrap #main #section4 .wrap .right .right-wrap .right-row3 .right-row3-right > div {width:100%;text-align:right;}
 #wrap #main #section4 .wrap .right .right-wrap .right-row3 .right-row3-right > div > span {display:inline-block;width:219px;height:34px;border:2px solid #fff;border-radius:5px;}
 #wrap #main #section4 .wrap .right .right-wrap .right-row3 .right-row3-right > div > span > a {display:block;width:100%;line-height:34px;font-size:14px;color:#fff;text-align:center;}
 #wrap #main #section4 .wrap .right .right-wrap .right-row3 .right-row3-right > div > span > a:hover {text-decoration:underline;}
@@ -207,19 +205,10 @@
 /* section5 */
 #wrap #main #section5 {width:100%;background:url(../img/section5.jpg) no-repeat 50% 0;background-size:cover;padding:80px 0;}
 #wrap #main #section5 .wrap {width:1100px;margin:0 auto;}
-#wrap #main #section5 .wrap .left {/* animation:s5Ani1 2s ease-in-out; */position:relative;left:0;opacity:1;float:left;width:50%;text-align:center;}/* 제이쿼리로 움직일 대상(제목/사진 다 움직여야됨) */
-/* @keyframes s5Ani1{ keyframes 이름 : 이름이라는 애니메이션을 시작하겠다. 
-    0%/* =from {left:-1000px; opacity:0;}
-    100%/* =to {left:0;opacity:1;}
-} */
+#wrap #main #section5 .wrap .left {position:relative;left:0;opacity:1;float:left;width:50%;text-align:center;}
 #wrap #main #section5 .wrap .left > img {width:210px;}
-            /* 애니메이션이름(id와같이중복안됨) 동작하는시간 반복횟수(default, infinite) */
-#wrap #main #section5 .wrap .right {/* animation:s5Ani2 2s ease-in-out; */position:relative;right:0;opacity:1;float:left;width:50%;padding-top:96.75px;}/* 제이쿼리로 움직일 대상(제목/사진 다 움직여야됨) */
-/* @keyframes s5Ani2{ /* keyframes 이름 : 이름이라는 애니메이션을 시작하겠다. 
-    from{right:-1000px; opacity:0;}
-    to{right:0;opacity:1;}
-} */
-#wrap #main #section5 .wrap .right > h2 {width:100%;} /* 👆 현재요소가(현재포지션이) 마지막(end)과 똑같다. */
+#wrap #main #section5 .wrap .right {position:relative;right:0;opacity:1;float:left;width:50%;padding-top:96.75px;}
+#wrap #main #section5 .wrap .right > h2 {width:100%;}
 #wrap #main #section5 .wrap .right > h2 > img {width:auto;}
 #wrap #main #section5 .wrap .right > span {margin-top:40px;display:block;width:121px;height:34px;border:2px solid #222;border-radius:4px;}
 #wrap #main #section5 .wrap .right > span > a {display:block;width:100%;line-height:34px;color:#222;background:transparent;text-align:center;}
