@@ -70,6 +70,34 @@ $(".slide-wrap").on({    // 슬라이드 전체를 터치하겟다는것임
 });
 */
 
+var _wheelDelta = null;
+
+//휠 이벤트 추가
+$(".slide-wrap").on("mousewheel DOMMouseScroll", function(e){
+    e.preventDefault();
+    if(e.detail){
+        _wheelDelta = e.detail*(-1*40);
+    }
+    else{
+        _wheelDelta = e.originalEvent.wheelDelta;
+        console.log(_wheelDelta);
+    }
+    if(_wheelDelta<0){ //스크롤 다운 = 음수
+        if(!$(this).is(":animated")){
+            nextSlideCountFn();
+        }
+        timerControlFn();
+    }
+    else{
+        if(!$(this).is(":animated")){
+            prevSlideCountFn();
+        }
+        timerControlFn();
+    }
+})
+
+
+
 //4-2. prev
     $(".prev-btn").on({ 
         click:function(){

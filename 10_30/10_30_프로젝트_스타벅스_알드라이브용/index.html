@@ -464,7 +464,7 @@
     </header>
 
     <main id="main">
-        <section id="section1">
+        <section id="section1" class="wheel-event">
             <h2 class="hide">섹션1</h2>
             <div class="wrap"> 
                 <span class="ani ani-1">
@@ -492,7 +492,7 @@
             </div>
         </section>
 
-        <section id="section2">
+        <section id="section2" class="wheel-event">
             <h2 class="hide">섹션</h2>
             <ul class="fixedclear">
                 <li class="fixedclear">
@@ -520,7 +520,7 @@
             </ul>
         </section>
 
-        <section id="section3">
+        <section id="section3" class="wheel-event">
             <h2 class="hide">섹션</h2>
             <div class="wrap"> 
                 <div class="slide-container">
@@ -553,7 +553,7 @@
             </div>
         </section>
 
-        <section id="section4">
+        <section id="section4" class="wheel-event">
             <h2 class="hide">섹션</h2>
             <div class="wrap fixedclear">
                 <div class="left">
@@ -590,7 +590,7 @@
                 </div>
             </div>
         </section>
-        <section id="section5">
+        <section id="section5" class="wheel-event">
             <h2 class="hide">섹션</h2>
             <div class="wrap fixedclear">
                 <div class="left">
@@ -602,14 +602,14 @@
                 </div>
             </div>
         </section>
-        <section id="section6">
+        <section id="section6" class="wheel-event">
             <h2 class="hide">섹션</h2>
             <div class="wrap fixedclear">
                 <span class="img-wrap"><img src="./img/reserve_xmas_beans.png" alt="christmas 2020"></span>
                 <span class="btn-wrap"><a href="#" title="more-view">자세히보기</a></span>
             </div>
         </section>
-        <section id="section7">
+        <section id="section7" class="wheel-event">
             <h2 class="hide">섹션</h2>
             <div class="wrap">
                 <h2><img src="./img/fav_prod_txt01.png" alt="할로윈푸드1"></h2>
@@ -618,7 +618,7 @@
                 <span class="fav-wrap"><img src="./img/2020_halloween_fav.png" alt=""></span>
             </div>
         </section>
-        <section id="section8">
+        <section id="section8" class="wheel-event">
             <h2 class="hide">섹션</h2>
             <div class="wrap">
                 <img class="img" src="./img/reserve_visual_pc.png" alt="">
@@ -628,7 +628,7 @@
                 <span class="title-02"><a href="#" class="blind" title="EXPLORE OUR STORY">EXPLORE OUR STORY</a></span>
             </div>
         </section>
-        <section id="section9">
+        <section id="section9" class="wheel-event">
             <h2 class="hide">섹션</h2>
             <div class="wrap">
                 <div class="left-img-wrap">
@@ -655,7 +655,7 @@
         </section>
     </main>
 
-    <footer id="footer">
+    <footer id="footer" class="wheel-event">
         <h2 class="hide">섹션</h2>
         <div class="row row1">
             <div class="wrap">
@@ -786,7 +786,40 @@
     <script src="./js/section8.js"></script>
     <script src="./js/section9.js"></script>
     <script src="./js/goTop.js"></script>
+<script>
 
+    var _wheelEvent = document.querySelector(".wheel-event");
+    var _wheelDelta = null;
+    var htmlBody = document.querySelector("html,body");
+
+    console.log(_wheelEvent);
+
+    _wheelEvent.forEach(function(index){
+        //console.log(index);
+        this.addEventListener("mouse-wheel DOMMouseScroll", function(e){
+            e.preventDefault();
+            if(e.detail){
+                _wheelDelta = e.detail*(-1*40);
+            }
+            else{
+                _wheelDelta = e.originalEvent.wheelDelta;
+            }
+            if(_wheelDelta<0){
+                if(index<10){
+                    console.log( htmlBody.stop().css({scrollTop:this.next().offset().top-123}) );
+                    htmlBody.stop().css({scrollTop:this.next().offset().top-123},600)
+                }
+            }
+            else{
+                if(index>0){
+                    htmlBody.stop().css({scrollTop:this.prev().offset().top-123},600)
+                }
+            }
+        })
+    })
+
+
+</script>
 
 </div>
 </body>
